@@ -4,6 +4,6 @@
   "private": true,
   "main": "src/controller.js",
   "dependencies": {
-    "corespring-legacy-dnd-categorize": "PieLabs/corespring-legacy-dnd-categorize"
+    "corespring-legacy-dnd-categorize": "corespring/corespring-legacy-dnd-categorize"
   }
 }
