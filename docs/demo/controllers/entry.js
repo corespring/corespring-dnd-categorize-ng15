@@ -1,0 +1,2 @@
+exports['corespring-dnd-categorize-ng15'] = require('corespring-dnd-categorize-ng15-controller');
+exports['corespring-dnd-categorize-ng15'].version =  '../node_modules/corespring-dnd-categorize-ng15/controller';

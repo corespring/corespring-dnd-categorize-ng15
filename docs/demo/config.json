@@ -1,0 +1,79 @@
+{
+  "pies": [
+    {
+      "id": "1",
+      "pie": {
+        "name": "corespring-dnd-categorize-ng15",
+        "version": "1.0.0"
+      },
+      "correctResponse": {
+        "cat_1": [
+          "choice_1"
+        ],
+        "cat_2": [
+          "choice_2"
+        ]
+      },
+      "feedback": {
+        "correctFeedbackType": "none",
+        "partialFeedbackType": "none",
+        "incorrectFeedbackType": "none"
+      },
+      "allowPartialScoring": false,
+      "partialScoring": {},
+      "allowWeighting": true,
+      "weighting": [
+        {
+          "id": "cat_1",
+          "weight": 1
+        },
+        {
+          "id": "cat_2",
+          "weight": 1
+        }
+      ],
+      "model": {
+        "categories": [
+          {
+            "id": "cat_1",
+            "label": "Category 1"
+          },
+          {
+            "id": "cat_2",
+            "label": "Category 2"
+          }
+        ],
+        "choices": [
+          {
+            "id": "choice_1",
+            "label": "choice 1",
+            "moveOnDrag": true
+          },
+          {
+            "id": "choice_2",
+            "label": "choice 2",
+            "moveOnDrag": true
+          },
+          {
+            "id": "choice_3",
+            "label": "choice 3",
+            "moveOnDrag": true
+          },
+          {
+            "id": "choice_4",
+            "label": "choice 4",
+            "moveOnDrag": true
+          }
+        ],
+        "config": {
+          "answerAreaPosition": "below",
+          "categoriesPerRow": 2,
+          "choicesLabel": "",
+          "choicesPerRow": 2,
+          "removeAllAfterPlacing": true,
+          "shuffle": false
+        }
+      }
+    }
+  ]
+}
