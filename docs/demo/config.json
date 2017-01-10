@@ -1,77 +1,103 @@
 {
-  "pies": [
+  "langs": [
+    "en-US"
+  ],
+  "elements": {
+    "corespring-dnd-categorize-ng15": "../.."
+  },
+  "models": [
     {
       "id": "1",
-      "pie": {
-        "name": "corespring-dnd-categorize-ng15",
-        "version": "1.0.0"
-      },
-      "correctResponse": {
-        "cat_1": [
-          "choice_1"
+      "element": "corespring-dnd-categorize-ng15",
+      "correctResponse" : {
+        "target1" : [ 
+            "1", 
+            "2"
         ],
-        "cat_2": [
-          "choice_2"
+        "target2" : [ 
+            "3", 
+            "4", 
+            "5"
         ]
       },
-      "feedback": {
-        "correctFeedbackType": "none",
-        "partialFeedbackType": "none",
-        "incorrectFeedbackType": "none"
+      "feedback" : {
+        "correctFeedbackType" : "none",
+        "partialFeedbackType" : "none",
+        "incorrectFeedbackType" : "none"
       },
-      "allowPartialScoring": false,
-      "partialScoring": {},
-      "allowWeighting": true,
-      "weighting": [
-        {
-          "id": "cat_1",
-          "weight": 1
-        },
-        {
-          "id": "cat_2",
-          "weight": 1
-        }
-      ],
-      "model": {
-        "categories": [
+      "allowPartialScoring" : false,
+      "partialScoring" : {
+        "sections" : [ 
           {
-            "id": "cat_1",
-            "label": "Category 1"
-          },
+            "catId" : "target1",
+            "partialScoring" : [ 
+              {
+                "numberOfCorrect" : 1.0,
+                "scorePercentage" : 0.0
+              }
+            ]
+          }, 
           {
-            "id": "cat_2",
-            "label": "Category 2"
+            "catId" : "target2",
+            "partialScoring" : [ 
+              {
+                "numberOfCorrect" : 1.0,
+                "scorePercentage" : 0.0
+              }
+            ]
+          }
+        ]
+      },
+      "allowWeighting" : true,
+      "weighting" : {
+        "target1" : 1.0,
+        "target2" : 1.0
+      },
+      "model" : {
+        "categories" : [ 
+          {
+            "id" : "target1",
+            "label" : "Expression equals 56"
+          }, 
+          {
+            "id" : "target2",
+            "label" : "Expression does not equal 56"
           }
         ],
-        "choices": [
+        "choices" : [ 
           {
-            "id": "choice_1",
-            "label": "choice 1",
-            "moveOnDrag": true
-          },
+            "id" : "1",
+            "label" : "3h + h",
+            "moveOnDrag" : true
+          }, 
           {
-            "id": "choice_2",
-            "label": "choice 2",
-            "moveOnDrag": true
-          },
+            "id" : "2",
+            "label" : "4h",
+            "moveOnDrag" : true
+          }, 
           {
-            "id": "choice_3",
-            "label": "choice 3",
-            "moveOnDrag": true
-          },
+            "id" : "3",
+            "label" : "3h",
+            "moveOnDrag" : true
+          }, 
           {
-            "id": "choice_4",
-            "label": "choice 4",
-            "moveOnDrag": true
+            "id" : "4",
+            "label" : "3 + h",
+            "moveOnDrag" : true
+          }, 
+          {
+            "id" : "5",
+            "label" : "h + h + h",
+            "moveOnDrag" : true
           }
         ],
-        "config": {
-          "answerAreaPosition": "below",
-          "categoriesPerRow": 2,
-          "choicesLabel": "",
-          "choicesPerRow": 2,
-          "removeAllAfterPlacing": true,
-          "shuffle": false
+        "config" : {
+          "answerAreaPosition" : "below",
+          "categoriesPerRow" : 2.0,
+          "choicesLabel" : "",
+          "choicesPerRow" : 2.0,
+          "removeAllAfterPlacing" : true,
+          "shuffle" : false
         }
       }
     }
